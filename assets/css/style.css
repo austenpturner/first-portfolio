@@ -1,0 +1,160 @@
+
+/* ----- Base Element Styles ----- */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #ddd;
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+h1 {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0;
+    float: left;
+}
+h2 {
+    color: #4aaaa5;
+}
+a {
+    color: #777;
+    text-decoration: none;
+}
+section {
+    background-color: #fff;
+    width: 60%;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+footer {
+    background-color: #666;
+    color: #fff;
+    font-size: .9em;
+    border-top: solid 5px #44aaaa;
+    width: 100%;
+    padding: 6px;
+    text-align: center; 
+}
+
+/* ----- Header and Navigation Styles ----- */
+
+header {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    padding-top: 10px;
+}
+header div {
+    width: 60%;
+    margin: auto;   
+}
+h1 {
+    float: left;
+}
+ul {
+    padding-top: 20px;
+    float: right;
+}
+nav li {
+    padding: 20px;
+    display: inline;
+    list-style: none;
+}
+nav a:hover {
+    color: #4aaaa5;
+}
+
+/* ----- Index Page Element Styles ----- */
+
+.main-content {
+    min-height: 100vh;
+}
+img {
+    width: 300px;
+    padding: 0 20px 10px 0;
+    float: left;
+}
+#main-page-footer {
+    /* max-height: calc(100vh- 0px);  */
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+}
+
+/* ----- Contact Page Element Styles ----- */
+
+input {
+    width: 100%;
+    height: 30px;
+}
+textarea {
+    width: 100%; 
+    height: 100px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+button {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+}
+
+/* ----- Portfolio Page Element Styles ----- */
+
+section h2 {
+    border-bottom: 1.5px solid #666;
+    padding-bottom: 20px;
+}
+.portfolio {
+    margin-bottom: 50px;
+}
+.portfolio div {
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+    position: relative;
+}
+.portfolio img {
+    padding: 0;
+    width: 300px;
+}
+.portfolio p {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 8px 0;
+    min-width: 300px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 3px;
+    left: 0;
+}
+
+/* ----- Clearfix ----- */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
