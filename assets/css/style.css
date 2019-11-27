@@ -20,8 +20,8 @@ h1 {
     background-color: #4aaaa5;
     color: white;
     padding: 20px;
-    margin-bottom: 0;
-    float: left;
+    margin: 0;
+    text-align: center;
 }
 h2 {
     color: #4aaaa5;
@@ -32,10 +32,9 @@ a {
 }
 section {
     background-color: #fff;
-    width: 60%;
-    padding: 10px 20px;
-    margin: auto;
-    margin-top: 50px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
 }
 footer {
     background-color: #666;
@@ -52,44 +51,37 @@ footer {
 header {
     background-color: #fff;
     border: solid 1px #ccc;
-    padding-top: 10px;
-}
-header div {
-    width: 60%;
-    margin: auto;   
-}
-h1 {
-    float: left;
 }
 ul {
-    padding-top: 20px;
-    float: right;
+    margin: auto;
+    padding: 0;
 }
 nav li {
-    padding: 20px;
-    display: inline;
     list-style: none;
+    margin: auto;
+    display: flex;
+}
+nav a {
+    padding: 10px 0;
+    margin: 5px auto;
+    text-align: center;
+    align-content: center;
 }
 nav a:hover {
     color: #4aaaa5;
 }
 
-/* ----- Index Page Element Styles ----- */
+/* ----- About Page Element Styles ----- */
 
-.main-content {
-    min-height: 100vh;
-}
 img {
-    width: 300px;
-    padding: 0 20px 10px 0;
-    float: left;
+    width: 95%;
+    max-width: 450px;
+    padding: 10px 0;
+    margin: auto;
+    display: block;
 }
-#main-page-footer {
-    /* max-height: calc(100vh- 0px);  */
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    bottom: 0;
+.about div {
+    padding: 0 10px;
 }
 
 /* ----- Contact Page Element Styles ----- */
@@ -150,6 +142,98 @@ section h2 {
     left: 0;
 }
 
+/* ----- Media Queries ----- */
+
+@media (min-width: 768px) {
+    
+    /*  Page Element Styles */
+
+    .main-content {
+        min-height: 100vh;
+    }
+    section {
+        width: 80%;
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+
+    /* About Page Styles */
+
+    img {
+        width: 350px;
+        padding: 0 20px 10px 0;
+        float: left;
+    }
+
+     /*  Navigation */
+
+    header div {
+        width: 80%;
+        padding-top: 10px;
+        margin: auto;   
+    }
+    h1 {
+        padding: 20px;
+        margin-bottom: 0;
+        float: left;
+    }
+    ul {
+        padding-top: 20px;
+        float: right;
+    }
+    nav li {
+        padding: 20px;
+        display: inline;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    /*  Page Element Styles */
+
+    section {
+        width: 60%;
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+
+    /* About Page Styles */
+
+    img {
+        width: 300px;
+        padding: 0 20px 10px 0;
+        float: left;
+    }
+    #main-page-footer {
+        max-height: calc(100vh - 67.78px); 
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        bottom: 0;
+    }
+
+    /*  Navigation */
+
+    header div {
+        width: 60%;
+        padding-top: 10px;
+        margin: auto;   
+    }
+    h1 {
+        padding: 20px;
+        margin-bottom: 0;
+        float: left;
+    }
+    ul {
+        padding-top: 20px;
+        float: right;
+    }
+    nav li {
+        padding: 20px;
+        display: inline;
+    }
+}
+
 /* ----- Clearfix ----- */
 
 .clearfix::after {
@@ -157,4 +241,3 @@ section h2 {
     clear: both;
     display: table;
 }
-
