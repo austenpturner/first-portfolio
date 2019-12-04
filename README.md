@@ -1,2 +1,2 @@
 # homework1
-BCS first homework assignment
+UW Bootcamp homework 1 - Create Profile Page using HTML and CSS
